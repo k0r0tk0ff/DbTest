@@ -1,9 +1,9 @@
-package MainExecutor;
+package k0r0tk0ff.exe;
 
-import bl.HibernateUtil;
-import entity.Address;
-import entity.Employee;
-import entity.Project;
+import k0r0tk0ff.bl.HibernateUtil;
+import k0r0tk0ff.entity.Address;
+import k0r0tk0ff.entity.Employee;
+import k0r0tk0ff.entity.Project;
 import org.hibernate.Session;
 
 import java.util.Calendar;
