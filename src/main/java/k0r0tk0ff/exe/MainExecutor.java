@@ -17,17 +17,30 @@ public class MainExecutor {
 		session.beginTransaction();
 
 		Types types = new Types();
-		types.setId(1);
 		types.setName("Новости");
 
-		Articles articles = new Articles();
-		articles.setId(1);
+		Articles articles = new Articles(types);
 		articles.setName("Новость1");
 
-		/*articleLink.setProjects(projects);*/
-
-		session.save(types);
 		session.save(articles);
+		session.save(types);
+
+
+		/*ArrayList <Types> typesArrayList = new ArrayList<>();
+		ArrayList <Articles> articlesArrayList = new ArrayList<>();
+
+		for (int i=1; i<4; i++) {
+			typesArrayList.add(i, new Types());
+			typesArrayList.get(i).setId(i);
+			typesArrayList.get(i).setName("Новости");
+
+			articlesArrayList.add(i, new Articles(typesArrayList.get(i)));
+			articlesArrayList.get(i).setId(i);
+			articlesArrayList.get(i).setName("Новость" + i);
+
+			session.save(typesArrayList.get(i));
+			session.save(articlesArrayList.get(i));
+		}*/
 
 		session.getTransaction().commit();
 		HibernateUtil.shutdown();

@@ -19,8 +19,15 @@ public class Articles {
     @Column(name = "NAME", length = 20)
     private String name;
 
-    public Articles() {
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn()
+    private Types types;
+
+    public Articles(Types types) {
+        this.types = types;
     }
+
+
 
     /**
      * Getter for property 'id'.
