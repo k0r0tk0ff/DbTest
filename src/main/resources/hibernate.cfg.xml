@@ -13,6 +13,7 @@
         <property name="hibernate.hbm2ddl.auto">create</property>
         <property name="show_sql">true</property>
         <mapping class="k0r0tk0ff.entity.Types"/>
+        <mapping class="k0r0tk0ff.entity.Articles"/>
         <!--<mapping class="k0r0tk0ff.entity.ArticleLink"/>-->
     </session-factory>
 </hibernate-configuration>
