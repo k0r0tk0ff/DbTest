@@ -4,7 +4,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 /**
- * Created by root on 4/12/17.
+ * Created by k0r0tk0ff on 4/13/17.
  * Need for create Hibernate session, and close it
  */
 public class HibernateUtil {
