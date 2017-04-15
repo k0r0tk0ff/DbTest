@@ -1,6 +1,5 @@
-# DbTest
-DbTest
+# SpringDataHibernateProject
 
-Тестовое задание
+SpringDataHibernateProject
 
 
